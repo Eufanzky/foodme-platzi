@@ -1,6 +1,41 @@
 /****************************************
  * general purpose css-only components  *
  ****************************************/
+/*font styles*/
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 100 to 400 */
+
+
+.font-family-style {
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
+
+
+/*home styles*/
+.jumbotron {
+  height: 500px;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative; /* Ensure positioning context for overlay */
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+}
+/*search page styles*/
 
 .fm-panel {
   background-color: #fff;
@@ -22,17 +57,14 @@
 }
 
 .fm-panel > h4 {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   margin: -10px -10px 10px -10px;
   padding: 10px 10px 10px 10px;
 }
 
-
 .fm-right {
   text-align: right;
 }
-
-
 
 /****************************************
  * angular components                   *
@@ -42,7 +74,6 @@
   color: #a9a9a9;
   margin: 0;
   padding: 0;
-
 }
 
 ul.fm-rating {
@@ -66,11 +97,8 @@ ul.fm-rating {
 }
 
 .fm-rating .fm-hover {
-  text-shadow: white 0 0  2px,
-  white 0 0  2px,
-  white 0 0  2px,
-  white 0 0  2px,
-  blue  0 0 10px;
+  text-shadow: white 0 0 2px, white 0 0 2px, white 0 0 2px, white 0 0 2px,
+    blue 0 0 10px;
 }
 
 fm-rating a {
@@ -82,27 +110,21 @@ fm-rating:hover a {
   visibility: visible;
 }
 
-
 .fm-deliver-to {
   display: block;
   width: 450px;
 }
 
-
 input.ng-invalid.ng-dirty {
-  border-color: #E9322D;
-  -webkit-box-shadow: 0 0 6px #F8B9B7;
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
   -moz-box-shadow: 0 0 6px #f8b9b7;
-  box-shadow: 0 0 6px #F8B9B7;
+  box-shadow: 0 0 6px #f8b9b7;
 }
-
-
-
 
 /****************************************
  * route specific css                   *
  ****************************************/
-
 
 /* customer */
 
@@ -111,7 +133,6 @@ input.ng-invalid.ng-dirty {
   opacity: 0.4;
   height: 705px;
 }
-
 
 /* restaurant list */
 
@@ -138,10 +159,9 @@ input.ng-invalid.ng-dirty {
   height: 100px;
 }
 
-
 /* menu */
 
-.fm-restaurant  {
+.fm-restaurant {
   margin-bottom: 20px;
 }
 
@@ -213,7 +233,6 @@ input.ng-invalid.ng-dirty {
   padding-left: 20px;
   padding-top: 5px;
 }
-
 
 /* checkout */
 
